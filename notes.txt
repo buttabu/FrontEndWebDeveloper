@@ -1,0 +1,42 @@
+Information Architecture: Structual design of a website navigation
+DOM: Descirbe the structure of the page
+JS: the language responsible for managing interaction with in a browser.
+	interacts with the DOM handling events
+	loading and unloading media
+	creating, modifying and delete elements in a page
+Server: in charge of managing the interaction between data nad how the data is presented to the user
+Compiled Languages: C, C++, Objective-C
+Interpreted: PHP, JS
+Hydrid: Java, C#, VB.NET, Python
+JS: interpreted Language
+	Case sensitive
+	create a variable => var variable name;
+	weakly typed language
+	String properties => .length
+	operators => alert(), prompt(){taking inputs}
+	= assignment, == equlaity, === strict equality
+	functions => function function_name () {}
+	Number() => JS built in function to make a variable a number
+	isNaN() => not a number
+	String has methods:
+			.toUpperCase();
+			.toLowerCase();
+			.indexOf();
+			.slice(2arguments);
+			.substring(), .substr();
+			
+	Regular Expression: format of a string
+			match patterns and strings
+		2 parts:
+			create expression
+			Apply and ask if it matches
+		
+		var myRE = /hello/; var myRE = new RegExp ("hello");
+		functions for regular expressions
+				.test()
+		creating patterns:
+			var myRE = /^hello/; or /hello$/; or /hel+o/ => + once or more,  ^ at the start , $ at the end
+		
+			
+			
+
