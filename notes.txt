@@ -36,7 +36,36 @@ JS: interpreted Language
 				.test()
 		creating patterns:
 			var myRE = /^hello/; or /hello$/; or /hel+o/ => + once or more,  ^ at the start , $ at the end
+	Arrays:
+		 0 based index
+		var array_name = [];
+		var arrya_name = ['','',''];
+		methods are functions that belong to an object
+		Array Methods
+			.reverse(), .sort(), .join(), .pop(), .push(), .length
 		
-			
-			
+	Events Names:
+		onload, onclick, onmouseover, onblur,onfocus
+	Handling Events:
+		element.event = function () { }; => no need for function name  		
+	
+	
+	Class:
+		blue print, an idea, description
+		defines attributes and behaviors.	
+	Object:
+		is created from teh class
+	Encapsulation:
+		the idea that classes are self-contianed units that represent both the data and the code that works on that data
+
+	Multithreading: doing multiple things inside one program and this is multithreading.
+		you often do to keep your program responsive 
+
+
+UX for Web Designers:
+	Standard Design: using elements the same way that major sites do
+	
+UX Foundations: Accessibility:
+	Accessibility: people with different disability can use our content
+				
 
