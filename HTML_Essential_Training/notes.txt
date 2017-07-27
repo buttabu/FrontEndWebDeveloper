@@ -1,0 +1,75 @@
+<p> = paragraph
+<n> = navigation
+<em> = emphasis 
+meta-tags = <meta charset="utf-8"> 
+		<meta name="description" content="A page for exploring HTML">
+
+Block level Elements: 
+  		take up their own line with in the flow of the document.
+
+In-line level elements: 	
+		appear with in the flow of other content.
+<pre> = preformatted tag => allow to have code snippets.
+line break = <br>
+<b> = bold tag
+Special Characters in HTML:
+		< => &lang
+Controlling Whitespace:
+		additional white space => &nbsp;
+Image Tag:
+	<img src="" width="" height = "" alt = "">
+Sectioning Elements:
+	<h1>...<h6>
+	<article>
+	<aside>
+	<nav>
+	<section>
+Semantic Elements:
+	<header>
+	<main>
+	<footer>
+Links: <a href = "" target="" rel ="" title=""></a>
+	target = ""
+		_blank
+		_parent
+		_self
+		_top
+		framename
+	rel = ""
+		alternate
+		author
+		bookmark
+		downlaod
+		help
+		license
+		next
+		nofollow
+		noreferrer
+		prefetch
+		prev
+		search
+		tag
+
+Link to downloadable resources:
+	<a href=".../.zip" title =""></a>
+	.zip or pdf
+	<a href="" title="" download or download=""></a>
+Lists:
+<ol start="6" reversed></ol> => 6,5,4,....
+<ol type = 'a'>
+	
+	Definition lists:
+		consists of 2 parts in each item: 
+				term and description
+		syntax : <dl></dl>
+			<dt></dt>
+			<dd></dd>
+		
+JS:
+ fucntion:
+	window.onload() = function {
+	window => an object
+	onload() => is an event
+	function will work when the page loads
+	
+}
