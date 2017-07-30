@@ -1,0 +1,39 @@
+same results for objects in JS:
+		course.title == course["title"]
+Window is the top level object in the BOM.
+
+DOM methods:
+	document.getElementById("");
+	document.getElementByClassName("");
+	document.getElementByTagName("");
+	document.querySelector("");
+	document.querySelectorAll("");
+
+JS to move clock hands:
+		hourhand.style.transform = "rotate(" + hrPosition + "deg)";
+
+Get the current time:
+	var date = new Date();
+	// get the hours, minutes, and seconds:
+		let hr = date.getHours();
+		let min = date.getMinutes();
+		let sec = date.getSeconds();
+
+make the clock run second by second:
+	first put all the script in the function
+	then use setInterval method
+	var interval = setInterval(function_name, time in milliseconds)
+
+How fast you type:
+	use event listneres to detect typing:
+		look for key board events:	testArea.addEventListener ("Keypress",start,false); => when the key is pressed
+	to match the string:	testArea.addEventListener("keyup",spellcheck,false)
+
+Automated Responsive Images Markup:
+	array that contains all the images on the page:
+		const IMAGES = document.querySelectorAll('img');
+		for (let i = 0 ; i < IMAGES.length; i++{
+			let imgsrc = IMAGES[i].getAttribute("src");
+		}	
+
+

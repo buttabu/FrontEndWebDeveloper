@@ -1,0 +1,57 @@
+Responsive Design:
+	is a design strategy that is centered on designing your content so that
+	it responds to the envirnoment. 
+
+	1.Fluid Grids => for flexible layouts
+	2.media Queries => adapt content to specific screen sizes
+	3.flexible image and media => responds to changes in screen sizes as well.
+
+Controlling Viewports:
+	2 mechanisms : overriding the user agent's default viewport
+	-viewport meta tag
+		in head => <meta name="viewport" content="width=480, initial-scale=1">
+	
+	-@viewport CSS rule
+		in CSS => @viewport { width:480px; zoom:1;}
+	initial scale => controls the zoom factor of your content for the initial view of the page.
+	
+Hardware Pixels:
+	smallest points the screen can display, 
+Reference pixels:
+	sometime called CSS pixel
+	a unit of measurement that establishes an optical standard for the length of a pixel, and is totally independent of hardware pixels
+	
+Reduce bitmap graphics:
+	svg and CSS7
+
+Media Queries:
+	<link rel="" href=""type="" media="screen">
+	available media types:
+		braille, projection, print, handheld.	
+	
+	<link rel="" href="" media="screnn adn (min-width:480px)">
+	
+	syntax:
+		@media[not|only] screen [and](expression){
+		}
+
+	media = "screen and (min-width:480px), screen and (orientation:landscape)"
+	, => OR operator
+
+Media Features:
+	width*, height*, device-width*, device-height, orientation
+	aspect_ratio*, device-aspect ratio, color, color index*
+	monochrome*, resolution, scan, grid
+	
+	*accepts 'min-' and 'max-' prefixes
+	
+	if creating modular style sheet and bring the external sheet use:
+			@import url(example.css) screen and (max-width:480 px);
+
+BreakPoint:
+	the moment a layout changes from one layout to another. Usually triggered by the width of the view port.
+
+Using fluid grids: (grid System)
+	16px grid => default
+	
+	 

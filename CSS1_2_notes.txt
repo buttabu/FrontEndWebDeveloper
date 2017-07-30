@@ -1,0 +1,64 @@
+Type Selectors: match the HTML by using the element name.
+
+Class Selectors: 
+		you define the value
+		the same class can be used multiple times per page
+		the class value is the selector, starting with a period
+
+
+id Selector:
+		you define the value
+		IDs can only be used once per page
+		the value is the selector, starting with a # symbol
+
+Multiple Classes:
+		seperate multiple classes with a space
+		apply different stylyes to each class, seperately
+		combine classes, with no space to select both
+
+Descendent Selectors:
+		use multiple selectors, separated by a space, to match the descendent elements
+		p a { }
+
+CSS Color:
+		color:#000000
+		color : rgb(0,0,0) => [0,255]
+
+Typography: the study of the design and use of type for communication
+Typeface: a set of fonts, designed with common characteristics and composed of glyps
+
+pixels:
+	measure screens in pixels
+	absolute value; great for accuracy
+	use whole numbers and avoid decimals
+	Browser default = 16px
+
+em:
+	relative unit
+	1em = inherited font-size
+	if no font size is declared, 1 em = default = 16px
+
+Block Elements:
+	Height = content
+	width = 100% of container	
+	elements start on a new line 
+	
+Inline Elements:
+	Height and width = content
+	
+Media Queries:
+	are used to specify how a document is presented in different media
+	CSS is applied on based on specific condition such as viewport width or device orientation.
+	consists of 2 components: media type and a media feature
+Width:
+	max-width : ..., min-width: 
+	
+Add media queries in 2 ways:
+	in HTML file using the link <link media="screen and (max-width: 400px)" rel="" href="">
+	in css file using @media and curly braces
+		@media (max-width: 400px){
+			.selector{
+				.... 
+				}
+			}
+
