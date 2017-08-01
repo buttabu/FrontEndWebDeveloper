@@ -1,0 +1,56 @@
+Bootstrap Grid System:
+	.12-column grid
+	.Accessed through CSS classes
+	.Three key concepts
+		.Containers
+		.Rows
+		.Columns
+
+Containers:
+	.control layout => declare through a special class that allows you to control the layout
+	.Add padding => going to create 15 px of padding on each side of the element.
+	.Two types
+		.fixed
+		.fluid
+	
+	fluid container:
+		always the width of the browser
+	
+	Fixed-width Container:
+		.15px padding on each side
+		.Adjusts to media query breakpoints
+		
+		ExtraSmall(<768px)  Small(>=768px)  Medium(>-992px)  Large(>=1200px)
+	Width   Auto    750px   	970px	1170px
+
+Rows:
+	.Horizantal groups of columns
+	.place within container
+	.should always include columns
+	.gets rid of container padding
+	<div class="row"></div>
+	.prepare containers so they can hold columns
+
+Columns:
+	when create your own column, it creates a gutter
+	.30px gutters => by default => 15 px on each side
+	.Use col-SIZE-SPAN
+		size: When it stacks
+		SPAN: how many columns
+	.>12 columns wrap	
+
+	Column Metrics:
+			extraSmall(<768px), Small(>=768px),Medium(>=992px),Large(>=1200px)
+	Container	Auto,750px,970px,1170px
+	Size		.col-xs-, .col-sm-,.col-md-,.col-lg-
+	Column width	auto, ~62px, ~81px, ~97px
+	<div class="col-md-6"></div>
+
+clearfix class: generally used in CSS to clear problem with floats, which is what are doing with different columns.
+	<div class="clearfix visible-sm-block" ></div>	
+
+offsetting: ask certain column to move over by a certain numbers of column widths
+	class="col-xs-offset-3 col-xs-6
+
+Also push and pull:
+	col-xs-push-1, col-sm-pull-8			
