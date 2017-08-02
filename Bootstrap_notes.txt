@@ -54,3 +54,112 @@ offsetting: ask certain column to move over by a certain numbers of column width
 
 Also push and pull:
 	col-xs-push-1, col-sm-pull-8			
+
+Tags:
+	<mark></mark>
+	<s></s> => striking
+	<del></del> => delete
+	<ins></ins> => inserted
+	<b></b>
+	
+Classes:
+	class = "text-left"
+	class = "text-right"
+	class = "text-center"
+	class = "text-justify"
+	class = "text-nowrap"
+
+Tansformation classes:
+	class = "text-lowercase"
+	class = "text-uppercase"
+	class = "text-capitalize"
+	<abbr title = "Captain"> Capt.</abbr>
+
+Blockquotes:
+	<blockquote></blockquote>
+	<footer></footer>
+	<blockquote class = "blockquote-reverse" ></blockquote>
+
+3 types of lists:
+	ul
+	<ul class = "list-inline"></ul>
+	ol
+	<ol class="list-unstyled"></ol>
+	<dl><dt></dt><dd></dd></dl>
+	<dl class="dl-horizantal"></dl>
+ 
+Styling Code:
+	<code></code> => For HTML => <code>$lt;em&gt;</code>
+	<kbd></kbd>
+	<var>e</var>
+
+	<pre></pre> => preformatted text
+	<samp></samp>
+	
+	for long script => <pre class="pre-scrollable"></pre>
+
+Buttons:
+	3 different type that can be make to look like a button
+	<a></a>, <button></button><input >
+
+	class = "btn btn-default"
+
+	Contextual classes Buttons:
+		class="btn btn-default, class="btn btn-primary", class = "btn btn-success", class="btn btn-info", class="btn btn-warning", class="btn btn-danger"
+
+	Button sizes:
+		class="btn btn-default btn-lg"...
+				btn-block
+
+	Active button:
+		class='btn btn-default active'
+
+	Disabled button:
+		class = 'btm btn-default disabled='disabled'
+
+Tables:
+	class='table'
+	class ='table table-striped'
+	class = 'table table-bordered'
+	class = 'table table-hover'
+	class = 'table table-condensed'
+	<div class= 'table-responsive'></div>
+
+Image Classes:
+	right before alt tag, put class='img-responsive center-block'
+	for rounded images => class = "img-rounded" 
+	'img-circle', 'img-thumbnail'
+
+Helper Classes:
+	class = "text-muted"
+	class = 'text-primary'
+	class = 'text-success'
+	class = 'text-info'
+	class = 'text-warning'
+	class = 'text-danger'
+	class = 'bg-primary'
+	class = 'bg-success'
+	class = 'bg-info'
+	class = 'bg-warning'
+	class = 'bg-danger'
+	class = 'center-block' => for image
+	class = 'clearfix' => to get rid of float
+	show and hidden element classes
+	
+Responsive Utilites:
+	Visibiltiy at breakpoints/print
+	VISIBILITY-SIZE-(DISPLAY)
+		Visibility: visible/hidden
+		Size: xs,sm,md,lg,print
+		Display: block, inline,inline-block, print 
+
+	class = 'visible-xs-block' or inline, inline-block
+	
+Forms:
+	<input class = "form-control".... >
+	class="form-group => have space between 2 rows
+	class = "checkbox"
+	class = 'radio'
+      	class = 'radio-inline'
+	class = 'checkbox-inline'
+		
