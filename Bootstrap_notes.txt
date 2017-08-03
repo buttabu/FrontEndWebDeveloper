@@ -163,3 +163,24 @@ Forms:
       	class = 'radio-inline'
 	class = 'checkbox-inline'
 		
+
+inline-Forms:
+	<form class = "form-inline" >
+
+Horizantal form: for mobile Users
+	<form class = "form-horizantal">
+	
+Validation Style: with the form-group class
+	has-warning
+	has-error
+	has-success
+	then with the label => class = "control-label
+	in form-group class => put has-feedback
+	
+
+Input-groups: allows you to combine fields together with other element
+	class = "input-group"
+	class = "input-group-addon"
+	aria => Accessible Rich Internet Applications
+	class = 'form-control'
+	class = 'input-group-btn'
