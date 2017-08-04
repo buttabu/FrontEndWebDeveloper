@@ -184,3 +184,82 @@ Input-groups: allows you to combine fields together with other element
 	aria => Accessible Rich Internet Applications
 	class = 'form-control'
 	class = 'input-group-btn'
+
+Dropdown:
+	wrap both the button and div with a div taht has a class of dropdown.
+		class = "dropdown"
+		data-toggle = "dropdown" => allows you to enter your own data into any particular element.
+		class = "dropdown-toggle"
+
+		in <ul> put class ="dropdown-menu"
+		<li> class="dropdown-header"
+		<li> role="separator" divider between 2 different sections
+		class = "disabled"
+		class = "btn-group"
+		class = "caret"
+
+Button-groups: different kinds of button combinations
+		role = "group"
+		class  = "btn-group-vertical/horizantal"
+		class = "btn-toolbar"
+		role = "toolbar
+		
+Navigations:
+	3 types: tabs, pills, navbars
+	<ul> class = "nav nav-tabs"
+	class = "pills"
+ 	class = "nav-stacked/ nav-justified"
+	<nav> class = "navbar navbar-default/inverse"
+	
+Adding content to he navbar:
+	bootstrap let you make brand => <div class ="navbar-header"> <a href="" class='navbar-brand'>
+	class = "navbar-text"
+	always give role = '' to your elements
+	class="dropdown-menu"
+
+Collapsing Navigation:
+	<div class = "collapse navbar-collapse id =''" > <ul><li>
+	
+Breadcrumbs and paginations styles:
+	class = "breadcrumbs" => navigate quickly to any point in the hierachy
+	<nav><ul class = "pagers" => allow people to navigate through content
+	 	<li class = "previous">
+
+Create a Jumbotron and page header:
+	class = "page-header"
+	class = 'jumbotron'
+
+Labels and Badgets:
+	<span class = "label label-default">
+	<span class = "badget">
+
+Thumbnail Style: use it to create a nice looking grid of images taht works together with bootstrap grid.
+	<a href='#' class = 'thumbnail'><img...
+
+Adding media Styles:
+	<div class = 'media'> <div class = 'media-left'> ..
+	class="media-body"
+	<img class = 'media-object' >
+	<h3 class = 'media-heading'>
+	<class = "media-middle'>
+	
+Following video with responsive embeds:
+		<div class = 'embed-responsive embed-responsive-4by3'		
+		<video class = 'embed-responsive-item' src ='' autoplay controls muted >
+
+Styling list groups:
+		<ul class = 'list-group'
+		<li class = 'list-group-item'
+		<span class = 'badge'>
+
+Working with Panels:
+	Panels => another way to encapsulate content in bootstrap.
+	<div class ='panel panel-default'>....content
+	class = 'panel-body'
+	class = 'panel-heading'
+	class = 'panel-title'
+	
+Wells:
+	sort of a super-simpler version of panels
+	<div class = 'well well-sm'
+			
