@@ -1,0 +1,56 @@
+React:
+	is a JS library for building UI => created by Facebook.
+	properties and state
+	parent-child relationships
+	component lifecycle
+	does not require Node.js to work, but will use npm (node package manager)
+	npm => makes the process of building fullstack
+		applications with Reach much simpler.
+
+	open source project
+	to make single page applications
+	another exciting feature is virtual DOM
+	functional programming
+	immutability
+	commonly used in enterprise applications
+	
+Why React is so fast?
+	JS objects are faster than DOM objects.
+	React Virtual DOM is a JS object
+	Never reads from the real DOM
+	
+React Syntax:
+	add react library from facebook git-hub page
+	copy the script code and paste it in html
+	then in body:
+		have a script tag which will have all of the react content.
+		will contain a a function called ReactDOM.render
+	ReactDOM.render():
+			takes 2 arguments:
+			first what we want to create
+			second where we want to put it.
+			
+
+	Ex:
+		ReactDOM.render(
+			React.createElement('div',null,'Hello World'),
+			document.getElementById('react-container'))
+		react-container => is an id with div 
+
+JSX: stands for Javascript for XML
+	instead of creating all these createElement function class,
+	we will use tags over here.
+	Ex : => unordered list
+	Babble => will take the JSX and turn into createElement call, so the browser can read it easily.
+		is a transpiler that will transpiler JS code.
+		works for JSX
+		works for ES6 and beyond
+		install babel from the babbel site and put it in the HTML => CDN, put it in another script tag
+		
+	everytime we add babel=> we need to add <script type='text/babel'></script>
+
+React Components:
+	components are small user interface elements that display data as it changes over time.
+	then these components are composed together, nested inside of one another to create entire unser interfaces.
+	
+			
