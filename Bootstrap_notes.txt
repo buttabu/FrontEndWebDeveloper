@@ -263,3 +263,61 @@ Wells:
 	sort of a super-simpler version of panels
 	<div class = 'well well-sm'
 			
+
+JS Components:
+	Carousel: lets you take a griup of images and show them in a presentation taht you can control with buttons.
+
+	create a container with a class of carousel => class = 'carousel'
+		has many parts:
+			images goes in class = 'carousel-inner'
+			then place each images in class ='item active'
+		if you want carousel to start automatically => class = 'carousel data-ride="carousel'
+		can also add to carousel class:
+				slide
+		adding a caption with a div => class='carousel-caption'
+		add navigation => need to give teh carousel an id.
+		class = "left carousel-control'
+
+		indicators at the bottom of the an image:
+				orderlist: <ol class ='carousel-indicators'><li data-target='#id' data-slide-to=''>
+		make sure to resize the images before putting in the carousel
+		
+	Modals: are common design pattern that lets you to show
+		some content when the user pushes a button. 
+		first need a button
+		data-toggle='modal' data-target = '#id'
+	need a series of tags to create a modal
+	<div class='modal' id ='#id' tabindex'-1' role='dialog' aria-labeledby='modalLabel'>
+
+	for the modal itself:
+			<div class='modal-dialog' role='document'>
+			<div class='model-content'>
+			<div class='modal-body'>
+
+	clickable closing area
+	<div class='modal-header'>
+	class='close'
+	data-dismiss='modal'
+	ara-label='Close'
+
+	Controlling tabs with JS:
+		2 pieces: actual tabs => for this we need list.
+		<ul class = 'nav nav-tabs role='tablist'>
+		<li role ='presentation'><a role='tab' datta-toggle='tab'>
+		class='active'
+		class='tab-content'
+		class = 'tab-pane'
+
+	Crafting collapsible content and accordions:
+			either need a button or link.
+			data-toggle='collapse'
+			
+	Tool-tip: 
+		in HTML:
+			<a href='' data-toggle ='tooltip' 
+				data-placement='top' title=''>
+		inJS:
+			$('[data-toggle="tooltip"]').tooltip();
+
+	Popover: same as tooltip.
+		
