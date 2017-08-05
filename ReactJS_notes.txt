@@ -53,4 +53,65 @@ React Components:
 	components are small user interface elements that display data as it changes over time.
 	then these components are composed together, nested inside of one another to create entire unser interfaces.
 	
-			
+Creating a components:
+	components should be in the <script> tags:
+	whenever create a component, set it to a variable
+	var MyComponent = React.createClass( => this function takes an object{
+		render() { => first method is required, tell what we need to return
+			return <div>
+			<h1>....</h1>				
+			<p>....</p>
+			</div>
+			}
+	
+		})
+	
+
+		now we need to use this function:
+		before the <script> tag finishes:
+				ReactDOM.render(<MyComponent />, where you want to put it) => takes 2 arguments:
+
+React components with ES6:
+		before the declaration of the variable:
+			class MyComponent extends React.Component{
+				render(){
+				use the same code as before.
+			}
+		}
+
+3 ways to create components:
+		with ES6
+		with create class
+		with a stateless function => a stateless functional component is just a simple function that returns react elements.
+React Components as:
+	after the <script> tag:
+		assign a function to a variable
+		const MyComponent = () => {
+		return statments from the previous code
+		}
+
+Using properties:
+	sending properties to components is similar to adding attributes to HTML
+	<h1>{this.props.text}</h1>
+	
+
+	ReactDOM.render(<MyComponent text='HelloWorld' />,...))
+	{} => JSX expression
+	{this.props.text}
+	{this.props.children}
+
+Handling Events:
+	first create a component:
+		var Note= React.createClass({
+			render() {
+			return => the best practice is to wrap all the DOM elements that we want to create in parenthesis
+			  return (
+				<div  className='Note'> => in JSX to create a class use className='' not class=''
+					
+				</div>			
+		)	
+		}
+		})
+
+Using States:
+	
