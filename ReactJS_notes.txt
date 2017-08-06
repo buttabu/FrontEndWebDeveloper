@@ -114,4 +114,71 @@ Handling Events:
 		})
 
 Using States:
+	when a component's state data changes
+	after <script> tag:
+		var checkbox = React.createClass({
+		getInitialState() { => get the initial state
+			return{checked:false},
+
+		another function...
+		this.setState() =>set the state to different, takes an object
+		}
+		render(){
+			return (<div>
+				...code
 	
+		</div>
+		)	
+		}	
+		})
+
+Using refs:
+	<textarea  ref ='newText'></textarea>
+
+PropTypes:
+	are an optional feature
+	serves as documentation about how you wish your components to work and what values you expect for them.
+	will be set equal to an object
+
+	propTypes: {
+		count : function(props, propName){
+		code....
+	}	
+	},
+
+	this.state.notes.map((note, i) => {
+		return <Note key={i} > {Note}></Note>
+		}
+
+Component LifeCycle:
+	Hooks for creation, lifetime, and teardown of components
+	allows to add libraries, load data, etc at specific times.
+	
+	Mounting:
+		getInitialState, componentWillMount, render, componentDidMount
+		
+	Updating:
+		componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate
+	
+Create React App:
+		is a command line tool that can be used to build React Applications
+		is a utility that's going to install everything
+			you need to work with React, without having to spend hours setting up development environment.
+		need to use NPM in order to run Create React App
+		
+	to verify NPM => npm -v
+	then sudo npm install -g create-react-app
+	decide where to install the project (location)
+	then just type:
+		create-react-app name_of_project 
+	cd name_of_project
+		then npm start
+
+	App.js is the main file of the project => localhost
+	
+
+	then paste the code...
+
+	app.js filename same as export ... in the file
+	
+	npm start to run the server
