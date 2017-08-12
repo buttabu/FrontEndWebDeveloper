@@ -1,0 +1,140 @@
+Sass:
+	CSS extension
+	pre-processed => Sass commands have to be installed into CSS
+	extensible => through the use of plug-ins like compass,bourbon, Susie.
+	written in Ruby
+	
+Features:
+	variables
+	Nesting
+	Partials
+	Extend
+	operators
+	Mixins
+	.sass => older ways extension
+		.pixgrid
+			ul
+			....
+			li
+			...
+		BENEFIT => super concise
+	.scss
+	same but with curly brackets
+
+Automation Template:
+	browser do not understand Sass => have to convert into CSS.
+	
+	Gulp.js => is a workflow tool that allows you to create comprehensive workflows, => taht will things like minimize the JS, process your Sass, and combine different files to reduce the number of calls.
+	git clone -b branch_name => -b stands for a specific branch
+	
+
+Working with variables:
+	.scss file
+	before the styles:
+		$variable_name : #color_name;
+		then place those in the css properties.
+	EX: color : $darkblue;
+
+	Fonts:
+	import them => put them in the begining of the file
+		$font-main:'','','';
+
+Nesting your Styles:
+	allows to put one css rule into another rule
+	target a class
+	Ex:
+		.media{
+			...code
+		.item{
+			..code
+		}
+	}
+	
+	 
+Using Partials: kind of functions
+	helps you to organize code into a loigcal group
+	@ import "variables"	
+
+	Normalize.css file => is a small Css document that has bunch of styles that will make all the different browsers behave consistently.
+	 
+	filename => _file_name => tells the gulp donot process these file, we are importing them to another file.
+	
+
+Creating basic Mixins:
+		display: table;
+		@mixin => telling you are using mixins
+		@mixin backImage($image){
+		...background properties
+
+		}
+
+		call mixins => #include name_of_mixin('name of the image');
+		create as many variables
+		create a default value: $height:500vh => vh => viewport height
+		mixin with a variable @min backImage($, $)
+
+Using the @ extend method:
+	Sass can use one class as the basis for the second class.
+	<button class ='btn btn-default'></button>
+	in scss:
+		.btn-default {
+		@extend .btn;
+		color: .....
+		} 
+	%btn => invisible class => will not be processed => nothing in the css file.
+	
+
+Referencing parent selectors with &:
+		& => parent of an element
+		&:hover{
+		
+		}
+		#typography & {} => if it is in the typpography section 
+		
+	gulp.js process Sass
+Comments:
+	 /*  */ => hidden comments:
+	/*! */ => will show up in the compressed version of the file
+	//
+	
+Math operators:
+	create a class => class='grid'
+	then open up a mixins file:
+		mixin will take 2 arguments ($qty,$margin)
+		{		
+		}
+
+		include mixin => @include mixin_name(5,1%);
+		
+Modifying Color:	
+	lightening, darkening of the colors
+	 built-in functions: 
+			complement($blue)
+			darken($..)
+			transparentize($color_name, 8)
+Creating List elements:
+	special version of arrays called an arrays
+	lists are seperated either by commas or spaces
+	nth(roundness, 1) => special function in Saas => apply only to the first child
+	
+
+Using the  @content container: mostly for the responsive design => for meida queries
+	nav {
+	header & { & means if the navigation is in the header
+	} } 
+	& => parent selector
+			
+Conditional @if statement:
+	allow to create styles that react to changes in the CSS
+	args ... in the mixin means to take more than 1 argument in the mixin.
+	@if length() {}
+	mostly used when doing responsive between 2 sizes
+	
+Looping through lists with @for
+	@for $item from 1 through length($color-headlines){
+	h#($item}
+	}
+
+Going through a list with @each
+	@each $name is $color-btn-names {
+	}
