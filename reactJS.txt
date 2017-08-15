@@ -1,0 +1,49 @@
+JSX is a syntax extension for javascript
+looks a lot like HTML
+sytax extension means: JSX is not valid javascript
+if a JSX expression takes more than 1 line, then you should wrap the 
+multi-line expression in paranthesis().
+there is a rule: a JSX expression must have exactly one outermost element.
+everything should be wrapped in <div></div>
+
+When writing REACT JS file:
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+// Copy code here:
+ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'));
+
+
+ReactDOM: is the name of JAVASCRIPT Library
+ReactDOM.render: is the most common way to renderJS: takes a JSX expression: 
+		creates a corresponding tree of DOM nodes
+
+
+document.getElementById('app')): first argument is appended to the screen
+			to whatever is selected by second argument
+
+In HTML: we use class, but in ReactJS we use "className";
+if u put <h1>2 + 3</h1> -> will print 2 + 3
+but you put <h1>{2+3}</h1> -> will print 5
+
+JSX element can have listeners: like <img onClick={myFunc} />
+eventListeners are camelCase: such as onClick
+
+React applications are made out of components.
+
+component is a small, resuable chuck of code that is responsible for one job -> to render some HTML
+
+var React = require('react')-> returns a JavaScript object-> contains methods->returned object is called React library
+var ReactDOM = require('react-dom'); -> also returns javascript object-> methods return are for interactin with the DOM -> ReactDOM.render.
+Every component must come from a component class.
+Component class is like a factory that creates components.
+To use one of the methods in the React Library; React.createClass
+
+Dynamic information:
+A react component can access dynamic information in 2 ways: props and state
+state: is not passed in from the outside.
+A component decides its own state.
+
+To make a component have state: write a getInitialState function:
+component can also change its state-> by calling this.setState({})
+this.setState takes 2 arguments 
